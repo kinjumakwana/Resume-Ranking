@@ -1,0 +1,49 @@
+https://github.com/vectornguyen76/resume-ranking
+
+Activate Virtual Env:  resume-ranking/Scripts/activate
+
+pip install pywin32
+
+pip install pypiwin32
+
+python  backend/analysis_service/main.py 
+
+power-shell:
+
+ .\resume-ranking\Scripts\pywin32_postinstall.py -install
+
+.\resume-ranking\Scripts\pip install pypiwin32
+
+.\resume-ranking\Scripts\pyinstaller.exe --hiddenimport win32timezone -F backend/analysis_service/main.py
+
+.\dist\main.exe install
+
+
+
+cd C:\Users\Dell\Apps\nssm-2.24\win64
+
+ nssm install MyPythonService python D:\Kinjal\Projects\resume-ranking-master\backend\analysis_service\main.py
+
+
+
+nssm install Resume_window_service python C:\Pythonservice\Resume_window_service.py
+
+nssm start Resume_window_service
+
+
+
+.\scriptenv\Scripts\pip install pyinstaller
+
+python -m flask --app backend/app run --port 5000 --debug
+
+C:\Pythonservice
+
+.\scriptenv\Scripts\activate
+
+.\dist\Resume_window_service install
+
+
+
+download PostgreSQL:
+https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/
+
